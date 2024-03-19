@@ -97,3 +97,30 @@ IOT2050_DEBIAN_DOCKER_PACKAGES = " \
     docker.io \
     docker-compose \
     "
+
+# kolin packages
+IOT2050_KOLIN_PACKAGES = " \
+    flashrom \
+	usbutils \
+	mc \
+	git \
+    can-utils \
+	fakeroot \
+	build-essential \
+	kexec-tools \
+	kernel-wedge \
+	gcc-arm-linux-gnueabihf \
+	libncurses5 \
+	libncurses5-dev \
+	libelf-dev \
+	asciidoc \
+	binutils-dev \
+	flex \
+	bison \
+	libssl-dev \
+	bc \
+	device-tree-compiler \
+	i2c-tools \
+	nfs-common \
+	htop \
+    "
