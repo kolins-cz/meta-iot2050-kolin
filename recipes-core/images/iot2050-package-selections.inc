@@ -107,9 +107,9 @@ IOT2050_KOLIN_PACKAGES = " \
     can-utils \
 	fakeroot \
 	build-essential \
-	kexec-tools \
-	kernel-wedge \
-	gcc-arm-linux-gnueabihf \
+    cmake \
+    automake \
+    autoconf \
 	libncurses5 \
 	libncurses5-dev \
 	libelf-dev \
@@ -123,4 +123,10 @@ IOT2050_KOLIN_PACKAGES = " \
 	i2c-tools \
 	nfs-common \
 	htop \
+    cockpit \
+    sshfs \
+    cifs-utils \
+    pip \
+    python3-serial \
+    python3-serial-asyncio \
     "
