@@ -43,6 +43,7 @@ IMAGE_INSTALL += " \
     optee-client-dev \
     tee-supplicant \
     iot2050-event-record \
+    linux-headers-${KERNEL_NAME} \
     "
 
 IOT2050_NODE_RED_SUPPORT ?= "1"
@@ -59,3 +60,21 @@ IMAGE_INSTALL += "${@ ' \
     iot2050-eio-manager \
     iot2050-conf-webui \
     ' if d.getVar('IOT2050_EIO_SUPPORT') == '1' else ''}"
+
+IOT2050_MODULE_FWU ?= "0"
+IMAGE_INSTALL += "${@ ' \
+    iot2050-module-firmware-update \
+    ' if d.getVar('IOT2050_MODULE_FWU') == '1' else '' }"
+
+IOT2050_META_HAILO ?= "0"
+IMAGE_INSTALL += "${@ ' \
+    hailo-pci-${KERNEL_NAME} \
+    hailo-firmware \
+    hailortcli \
+    libhailort \
+    libhailort-dev \
+    libgsthailo \
+    libgsthailo-dev \
+    python3-hailort \
+    hailort \
+    ' if d.getVar('IOT2050_META_HAILO') == '1' else '' }"
