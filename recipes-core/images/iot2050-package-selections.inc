@@ -130,4 +130,5 @@ IOT2050_KOLIN_PACKAGES = " \
     pip \
     python3-serial \
     python3-serial-asyncio \
+    iperf \
     "
